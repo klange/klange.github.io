@@ -135,7 +135,7 @@ var Module = {
     }
     FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', '__init__.krk', '__init__.krk', 1, 0)
     FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', 'highlighter.krk', 'highlighter.krk', 1, 0)
-    FS.createPreloadedFile('/usr/local/lib/kuroko/foo', '__init__.krk', __init__.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/foo', '__init__.krk', '__init__.krk', 1, 0)
     FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', '__init__.krk', '__init__.krk', 1, 0)
     FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', 'baz.krk', 'baz.krk', 1, 0)
   }],
