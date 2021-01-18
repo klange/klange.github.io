@@ -125,7 +125,7 @@ In regular strings, line feeds are not accepted, but <i>big strings</i> can run 
 <p><code>print(len("hello world"))</code></p>
 <p>Strings can also be <i>subscripted</i> (or <i>indexed into</i>) to retrieve individual codepoints:</p>
 <p><code>print("hello"[1])</code></p>
-<p>Subscripting a string returns a "string of length 1". Since strings consist of _Unicode codepoints_, a string of Japanese text like <code>"日本語"</code> has a length of 3:</p>
+<p>Subscripting a string returns a "string of length 1". Since strings consist of <i>Unicode codepoints</i>, a string of Japanese text like <code>"日本語"</code> has a length of 3:</p>
 <p><code>print(len("日本語"))
 print("日本語"[1])</code></p>
 ''','''
@@ -245,7 +245,7 @@ a()</code></p>
 ''','''
 <h1>Objects and Classes</h1>
 <p>Objects and classes in Kuroko work a lot like Python or similar languages in that they have an arbitrary and mutable set of fields, which may be methods or other values.</p>
-<p>To create a b asic object without methods, the <code>object</code> class is provided:</p>
+<p>To create a basic object without methods, the <code>object</code> class is provided:</p>
 <p><code>let o = object()
 o.foo = "bar"
 print(o.foo)</code></p>

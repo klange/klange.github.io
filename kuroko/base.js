@@ -131,13 +131,13 @@ var Module = {
     /* Load source modules from web server */
     const modules = ["help.krk","collections.krk","json.krk","string.krk","web.krk","dummy.krk"];
     for (const i in modules) {
-      FS.createPreloadedFile('/usr/local/lib/kuroko', modules[i], modules[i], 1, 0)
+      FS.createPreloadedFile('/usr/local/lib/kuroko', modules[i], "res/" + modules[i], 1, 0)
     }
-    FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', '__init__.krk', 'init.krk', 1, 0)
-    FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', 'highlighter.krk', 'highlighter.krk', 1, 0)
-    FS.createPreloadedFile('/usr/local/lib/kuroko/foo', '__init__.krk', 'init.krk', 1, 0)
-    FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', '__init__.krk', 'init.krk', 1, 0)
-    FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', 'baz.krk', 'baz.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', '__init__.krk', 'res/init.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/syntax', 'highlighter.krk', 'res/highlighter.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/foo', '__init__.krk', 'res/init.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', '__init__.krk', 'res/init.krk', 1, 0)
+    FS.createPreloadedFile('/usr/local/lib/kuroko/foo/bar', 'baz.krk', 'res/baz.krk', 1, 0)
   }],
   postRun: [function() {
     /* Bind krk_call */
